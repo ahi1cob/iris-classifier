@@ -15,9 +15,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,random_s
 
 #training a model with selected algorithm
 from sklearn.tree import DecisionTreeClassifier
+import joblib
 model = DecisionTreeClassifier(random_state=42)
 #train the model with modelfit function
 model.fit(X_train, y_train)
+#save the model to a file
+with open('output/model.joblib', 'a'):
+ joblib.dump(model,'output/model.joblib')
 
 
 #after model is trained it can be used to test.
@@ -46,13 +50,16 @@ matrix = confusion_matrix(y_test, y_pred)
 print("matrix:", matrix)
 cm_display = ConfusionMatrixDisplay(confusion_matrix = matrix, display_labels = ['setosa', 'versicolor','virginica'])
 cm_display.plot()
-plt.show()
 plt.savefig("output/Confusion_Matrix.png")
+plt.show()
+plt.clf()
 
 #visualize the entire structure with plot tree model 
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 plot_tree(model) 
 plt.savefig("output/Plot_tree.png")
+plt.clf()
+
 
 #check the accuracy with different algorithm
 from sklearn.neighbors import KNeighborsClassifier
