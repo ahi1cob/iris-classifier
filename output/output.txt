@@ -26,3 +26,33 @@ Accuracy: 1.0
  True labels: [1 0 2 1 1 0]
 
 Accuracy: 1.0
+
+ Predictions: [1 0 2 1 1 0]
+
+ True labels: [1 0 2 1 1 0]
+
+Accuracy: 1.0
+
+ Predictions: [1 0 2 1 1 0]
+
+ True labels: [1 0 2 1 1 0]
+
+Accuracy: 1.0
+
+ Predictions: [1 0 2 1 1 0]
+
+ True labels: [1 0 2 1 1 0]
+
+Accuracy: 1.0
+
+ Predictions: [1 0 2 1 1 0]
+
+ True labels: [1 0 2 1 1 0]
+
+Accuracy: 1.0
+
+ Predictions: [1 0 2 1 1 0]
+
+ True labels: [1 0 2 1 1 0]
+
+Accuracy: 1.0

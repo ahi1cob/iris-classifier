@@ -20,8 +20,7 @@ model = DecisionTreeClassifier(random_state=42)
 #train the model with modelfit function
 model.fit(X_train, y_train)
 #save the model to a file
-with open('output/model.joblib', 'a'):
- joblib.dump(model,'output/model.joblib')
+joblib.dump(model,'output/model.joblib')
 
 
 #after model is trained it can be used to test.
